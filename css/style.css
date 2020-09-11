@@ -1,0 +1,237 @@
+@font-face {
+  font-family:"Russia";
+  font-weight:normal;
+  font-style:normal;
+  src:url(../fonts/russia.woff2) format("woff2"),
+  url(../fonts/russia.woff) format("woff");
+  font-display: fallback;
+}
+body{
+  font-family: Russia, Arial, sans-serif;
+  background: linear-gradient(84.71deg, #3464E0 1.19%, #2955C9 99.81%);
+  height: 100vh;
+  font-size: 16px;
+}
+a{
+  text-decoration: none;
+}
+.wrapper{
+  width: 1440px;
+  padding-left: 65px;
+  padding-right: 40px;
+  margin: 0 auto;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo{
+  height: 45px;
+  color: #fff;
+  font-size: 24px;
+  margin-left: -18px;
+  padding-left: 12px;
+}
+.header__logo svg {
+  float: left;
+}
+.header__logo span {
+  line-height: 45px;
+  margin-left: 14px;
+}
+.header__login{
+  width: 175px;
+  background: #1740AA;
+  height: 42px;
+  border-radius: 50px;
+  line-height: 42px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 14px;
+  padding-left: 63px;
+  position: relative;
+}
+.header__login:hover, .button:hover{
+  background: #16388f;
+}
+.header__login::before{
+  content: "";
+  display: block;
+  top: 8px;
+  left: 26px;
+  position: absolute;
+  background-image: url('../img/logout.svg');
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 25px;
+}
+main{
+  text-align: center;
+}
+.modal{
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  margin: 8% auto 0;
+  border-radius: 5px;
+  padding: 40px 0 0;
+  z-index: 2;
+  box-shadow: 0 -30px 1px -10px rgba(255,255,255,0.8),
+  0 -50px 1px -17px rgba(255,255,255,0.6);
+}
+.main-nav{
+  display: flex;
+  font-size: 18px;
+  margin-left: -25px;
+}
+.main-nav__link{
+  color: #9CBAF0;
+  line-height: 21px;
+  margin-left: 47px;
+}
+.main-nav__link:hover{
+  color: #ffffff;
+}
+.main-nav__link--active{
+  color: #ffffff;
+}
+.tabs{
+  display: flex;
+  width: 340px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.tabs__tab{
+  background-color: #fff;
+  border:0;
+  cursor:pointer;
+  font-size: 26px;
+  line-height: 26px;
+  color: #C3CAD6;
+  padding: 0;
+}
+.tabs__tab--active{
+  color: #3464E0;
+}
+.form{
+  width:340px;
+  text-align: left;
+  margin: 40px 82px 50px 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form label{
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+  color: #444444;
+}
+.form label span{
+  color: #ef1e1e;
+}
+.form input{
+  display: block;
+  width:100%;
+  height: 44px;
+  box-sizing: border-box;
+  margin: 6px 0 14px;
+  border: 1px solid #F1F4F9;
+  border-radius: 4px;
+  padding-left: 16px;
+}
+.form input:focus {
+  border: 1px solid #595a5b;
+}
+.form input::placeholder{
+  color: #C3CAD6;
+  line-height: 44px;
+}
+.form-reg{
+  width: 840px;
+  margin-right: 15px;
+  margin-left: 35px;
+  margin-bottom: 35px;
+}
+.form-reg__group{
+  flex-basis: 100%;
+}
+.form-reg__group input{
+  width: 280px;
+  height: 44px;
+}
+.form-reg__decline{
+  height: 44px;
+  margin-top: 20px;
+  line-height: 44px;
+  padding: 0 30px;
+  border: 1px solid #C3CAD6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #C3CAD6;
+}
+.form-reg__decline:hover{
+  background-color: #eee;
+}
+.group-with-2col{
+  display: flex;
+}
+.group-with-2col__col{
+  margin-right: 30px;
+}
+.group-button{
+  display: flex;
+  justify-content: space-between;
+}
+.group-checkbox{
+  margin-top: 10px;
+}
+.group-checkbox input{
+  display: none;
+  margin-top: 15px;
+}
+.group-checkbox label{
+  padding-left: 35px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.group-checkbox label::before{
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #3464E0;
+  border-radius: 2px;
+}
+.group-checkbox input:checked + label::before{
+  background-color: #3464E0;
+  box-shadow: inset 0 0 0 5px #fff;
+}
+.button{
+  background: #3464E0;
+  border: 1px solid #3464E0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+}
+.button--auth{
+  margin-top: 20px;
+  padding: 9px 17px;
+}
+.form-auth__forgot-pass{
+  align-self: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #3464E0;
+}
+.visually-hidden{
+  display: none;
+}
